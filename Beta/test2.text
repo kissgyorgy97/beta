@@ -1,0 +1,38 @@
+/**
+ * Calls a contract function to get the admin of the wallet.
+ * @param web3 creating a web3 connection for the function whenever it is called
+ * @param address address of the contract that we are using
+ * @param abi abi of the contract that we are using
+ * @param {String} calleraddress  the address of the caller
+ * @param {String} privateKey the private key of the calleraddress
+ * @param {String} beneficiary the address of the person who the caller wants to send the tokens
+ * @param {Number} amount the amount of the token that the caller want to send
+ * @param {Number} type if 0 the transfertotoken need 2 signs,1 from the calleraddress the other from the admin or the beneficiary
+ *                      if 1 the transfertotoken need 3 signs, 1 from the calleraddress one from the admin and one from the beneficiary
+ * 
+ * @method getTransactionCount(calleraddress) Get the numbers of transactions sent from this address.
+ *      @param calleraddress
+ * @method transferToToken(beneficiary,amount,type).encodeABI Encodes the ABI for this method with the given params. This can be used to send a transaction.
+ *      @param beneficiary the address of the person who the caller wants to send the tokens
+ *      @param amount the amount of the token that the caller want to send
+ *      @param typeif 0 the transfertotoken need 2 signs,1 from the calleraddress the other from the admin or the beneficiary
+ *                      if 1 the transfertotoken need 3 signs, 1 from the calleraddress one from the admin and one from the beneficiary
+ * @method transferToToken(beneficiary,amount,type).estimateGas Will call estimate the gas a method execution will take when executed in the EVM without.
+ *      @param beneficiary the address of the person who the caller wants to send the tokens
+ *      @param amount the amount of the token that the caller want to send
+ *      @param typeif 0 the transfertotoken need 2 signs,1 from the calleraddress the other from the admin or the beneficiary
+ *                      if 1 the transfertotoken need 3 signs, 1 from the calleraddress one from the admin and one from the beneficiary
+ * @method signTransaction(tx,privateKey) Signs an Ethereum transaction with a given private key.
+ *      @param tx variable declared above, containing the transaction's data
+ *      @param privateKey the private key of the calleraddress
+ * 
+ * @param {function} If the last argument is a function, the contract function
+ *   call will be asynchronous, and the callback will be passed the
+ *   error and result.
+ * @method sendSignedTransaction(res.rawTransaction) Sends an already signed transaction
+ *      @param res.rawTransaction the raw ethereum transaction
+ * @method tran.on('transactionHash',(txhash)) give the transaction hash to txhash
+ *      @param transactionHashthe hash of the transaction
+ *      @param txhash variable declared to store transactionhash
+ * @return {String} the transaction has in string
+ */     
