@@ -214,7 +214,7 @@ function check_permitting(web3, address, abi, who, transactionId, callback) {
  *                      if 1 the transfertotoken need 3 signs, 1 from the calleraddress one from the admin and one from the beneficiary
  * 
  * @method getTransactionCount(calleraddress) Get the numbers of transactions sent from this address.
- *      @param {String} calleraddress
+ *      @param {String} calleraddress  the address of the caller
  * @method transferToToken(beneficiary,amount,type).encodeABI Encodes the ABI for this method with the given params. This can be used to send a transaction.
  *      @param {String} beneficiary the address of the person who the caller wants to send the tokens
  *      @param {Number} amount the amount of the token that the caller want to send
