@@ -1,5 +1,5 @@
 /**
- * Calls a contract function to get the admin of the wallet.
+ * Calls a contract function to send tokens from the caller to the beneficiary.
  * @param web3 creating a web3 connection for the function whenever it is called
  * @param address address of the contract that we are using
  * @param abi abi of the contract that we are using
