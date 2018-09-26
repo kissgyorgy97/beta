@@ -34,5 +34,5 @@
  * @method tran.on('transactionHash',(txhash)) give the transaction hash to txhash
  *      @param transactionHashthe hash of the transaction
  *      @param txhash variable declared to store transactionhash
- * @return {String} the transaction has in string
+ * @return {String} the transaction hash in string
  */     
