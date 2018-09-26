@@ -15,12 +15,12 @@
  * @method transferToToken(beneficiary,amount,type).encodeABI Encodes the ABI for this method with the given params. This can be used to send a transaction.
  *      @param beneficiary the address of the person who the caller wants to send the tokens
  *      @param amount the amount of the token that the caller want to send
- *      @param typeif 0 the transfertotoken need 2 signs,1 from the calleraddress the other from the admin or the beneficiary
+ *      @param type if 0 the transfertotoken need 2 signs,1 from the calleraddress the other from the admin or the beneficiary
  *                      if 1 the transfertotoken need 3 signs, 1 from the calleraddress one from the admin and one from the beneficiary
  * @method transferToToken(beneficiary,amount,type).estimateGas Will call estimate the gas a method execution will take when executed in the EVM without.
  *      @param beneficiary the address of the person who the caller wants to send the tokens
  *      @param amount the amount of the token that the caller want to send
- *      @param typeif 0 the transfertotoken need 2 signs,1 from the calleraddress the other from the admin or the beneficiary
+ *      @param type if 0 the transfertotoken need 2 signs,1 from the calleraddress the other from the admin or the beneficiary
  *                      if 1 the transfertotoken need 3 signs, 1 from the calleraddress one from the admin and one from the beneficiary
  * @method signTransaction(tx,privateKey) Signs an Ethereum transaction with a given private key.
  *      @param tx variable declared above, containing the transaction's data
