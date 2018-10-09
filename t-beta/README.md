@@ -18,6 +18,7 @@
  
  Now you can call the funtions from beta.js to implement them.
 #implementation you have to add the following to your javascript application beginning.
+
 const {
     getOwnerOfWallet,
     getAdminrOfWallet,
