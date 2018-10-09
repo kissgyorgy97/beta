@@ -17,6 +17,30 @@
 12. ##!! Mind that when you are deploying to Ganache you are using the first generated account.
  
  Now you can call the funtions from beta.js to implement them.
+#implementation you have to add the following to your javascript application beginning.
+const {
+    getOwnerOfWallet,
+    getAdminrOfWallet,
+    getPendingTransactions,
+    walletBalance,
+    BalanceOfToken,
+    check_permitting,
+    transferToToken,
+    signTransaction,
+    deletePendingTransaction,
+    setNewAdmin,
+    withdraw_ether,
+    withdraw_token 
+  } = require('./beta.js')
+
+const json = require('./build/contracts/Beta_Wallet_for_HoneyGramm.json');
+const address = 'the address of the deployed contract';
+const abi = json['abi'];
+
+const Web3 = require('web3');
+const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
+
+After this you can call the exported methods with the parameters given in beta.js
 
 Running test
 Start Ganache.
