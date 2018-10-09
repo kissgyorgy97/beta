@@ -43,7 +43,4 @@ const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
 
 After this you can call the exported methods with the parameters given in beta.js
 
-Running test
-Start Ganache.
-Migrate contracts to Ganache: truffle migrate.
-Run the Tests: truffle test.
+
