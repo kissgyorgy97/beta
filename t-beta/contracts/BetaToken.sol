@@ -27,6 +27,7 @@ contract BetaToken is MintableToken, BurnableToken {
         canMove = true;
     }
 
+
   /**
   * @dev Allows anyone to transfer the Beta tokens once moving was started
   * @param _to the recipient address of the tokens.
@@ -61,4 +62,6 @@ contract BetaToken is MintableToken, BurnableToken {
     function emergencyERC20Drain( ERC20 oddToken, uint amount ) public {
         oddToken.transfer(owner, amount);
     }
+
+    
 }
